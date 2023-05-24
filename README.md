@@ -2,7 +2,7 @@
 
 This script installs Strapi onto any Ubuntu server. Ensure that your domain DNS is setup correctly, and then run the command below.
 
-`wget -O strapi_ubuntu_installer.sh <LINK>; chmod u+x strapi_ubuntu_installer.sh; sh strapi_ubuntu_installer.sh -n <PROJECTFOLDERNAME> -e <EMAIL>`
+`wget -O strapi_ubuntu_installer.sh https://raw.githubusercontent.com/onlyaperitifs/strapi_ubuntu_installer/main/install.sh?token=GHSAT0AAAAAACDBZVKQD5MSZN7SYC5LBTTYZDOOLDA && chmod u+x strapi_ubuntu_installer.sh && sh strapi_ubuntu_installer.sh -n <PROJECTFOLDERNAME> -e <EMAIL>`
 
 `<PROJECTFOLDERNAME>` being the same as the URL you want to host the Strapi application at, as per your DNS settings. For example, `manage.mycool.com`, or whatever you configured it to be.
 
