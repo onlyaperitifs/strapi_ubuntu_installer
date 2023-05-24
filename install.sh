@@ -1,15 +1,6 @@
 #!/bin/bash
-while getopts n:e: flag
-
-do
-    case "${flag}" in
-        n) projectname=${OPTARG}
-            ;;
-        e) certemail=${OPTARG}
-            ;;
-        *) echo "Invalid option: -$flag" ;;
-    esac
-done
+read -p "Enter root domain: " projectname
+read -p "Enter email address (for Cerbot): " certemail
 
 # INSTALL NODE.JS & NPM
 echo "Installing Node.js and NPM..."

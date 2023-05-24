@@ -1,11 +1,12 @@
 ## Strapi Ubuntu Installer
 
-This script installs Strapi onto any Ubuntu server. Ensure that your domain DNS is setup correctly, and then run the command below.
+This script installs Strapi onto any Ubuntu server. Ensure that your domain DNS is setup and has propagated, and then run the command below.
 
 ```
-wget -O strapi_ubuntu_installer.sh https://raw.githubusercontent.com/onlyaperitifs/strapi_ubuntu_installer/main/install.sh?token=GHSAT0AAAAAACDBZVKQD5MSZN7SYC5LBTTYZDOOLDA && chmod u+x strapi_ubuntu_installer.sh && sh strapi_ubuntu_installer.sh -n <PROJECTFOLDERNAME> -e <EMAIL>
+wget -O strapi_ubuntu_installer.sh https://raw.githubusercontent.com/onlyaperitifs/strapi_ubuntu_installer/main/install.sh && chmod u+x strapi_ubuntu_installer.sh && sh strapi_ubuntu_installer.sh
 ```
 
-`<PROJECTFOLDERNAME>` being the same as the URL you want to host the Strapi application at, as per your DNS settings. For example, `manage.mycool.com`, or whatever you configured it to be.
+What you'll be asked to provide:
 
-`<EMAIL>` is the address that you want to register with Cerbot for HTTPS.
+- `root domain`: Where you want to point the NGINX reverse proxy
+- `email`: Email address for Certbot notifications
